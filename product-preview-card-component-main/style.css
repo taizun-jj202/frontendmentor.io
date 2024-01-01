@@ -1,0 +1,132 @@
+/* 
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif; 
+    
+    Size of container div : 
+        600 x 450    
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%); /*Cream */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0;
+}
+
+/* div {
+    border: 1px solid blueviolet;
+} */
+
+.container {
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.left {
+    margin-left: 0;
+    width: 300px;
+}
+
+.left img {
+    width: 100%;
+    object-fit: contain;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.right {
+    margin-right: 0;
+    width: 50%;
+}
+
+.top {
+    color: hsl(228, 12%, 48%);
+    padding: 20px;
+
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.french-name {
+    color:  hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 35px;
+    
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 14px;
+    text-align: left;
+    padding: 20px;
+}
+
+.prices {
+    display: flex;
+
+}
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    width: 50%;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+.old-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 10px;
+
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.cart {
+    padding: 20px;
+    display: grid;
+}
+
+.buton {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif; 
+
+    width: 236px;
+    height: 48px;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.buton:hover {
+    background: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
