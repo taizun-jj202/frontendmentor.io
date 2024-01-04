@@ -23,9 +23,9 @@ body {
     margin-top: 0;
 }
 
-/* div {
+div {
     border: 1px solid blueviolet;
-} */
+}
 
 .container {
     width: 600px;
@@ -45,6 +45,11 @@ body {
     object-fit: contain;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+.mobileimg {
+    display: none;
+
 }
 
 .right {
@@ -130,3 +135,59 @@ body {
     background: hsl(212, 21%, 14%);
     cursor: pointer;
 }
+
+/* Mobile size dimensions :
+    375 x 667 
+
+    Box dimensions :
+    343 x 611
+
+    Image top :  343x239
+
+*/
+
+
+@media (width <= 376px) {
+
+
+    .container {
+        width: 343px;
+        height: 611px;
+        display: inline-block;
+
+    }
+
+
+    .left {
+        margin-top: 0;
+        height: 239px;
+        width: 343px;
+    }
+
+    .desktopimg {
+        display: none;
+    }
+
+    .mobileimg{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px ;
+        display: block;
+    }
+
+    .right {
+        width: 100;
+
+    }
+    .top{
+        width: 343px;
+        font-size: 12px;
+        
+    }
+
+
+
+
+
+
+}
+
