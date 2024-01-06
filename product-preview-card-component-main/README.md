@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Solution](https://github.com/taizun-jj202/frontendmentor.io/tree/main/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Frontend Site](https://frontendmentor-io-x7d9.vercel.app/)
 
 ## My process
 
