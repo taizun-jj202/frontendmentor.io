@@ -43,7 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/taizun-jj202/frontendmentor.io/tree/main/interactive-rating-component-main)
+- Solution URL : [GitHub](https://github.com/taizun-jj202/frontendmentor.io/tree/main/interactive-rating-component-main)
+- Live Solution URL : [Vercel](https://frontendmentor-io-kdrv.vercel.app/)
 
 ## My process
 
