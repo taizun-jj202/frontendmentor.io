@@ -1,0 +1,165 @@
+
+/* - Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center;
+    margin-top: 2rem; 
+    color: white  ;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: hsl(216, 12%, 8%) ;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    margin: 1.5rem;
+}
+
+button {
+    font-family: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-container, .thank-you {
+
+    width: 414px;
+    background-color: hsl(213, 19%, 18%) ;
+    border-radius: 30px;
+    padding: 1.5rem;
+
+}
+
+.main-container img {
+    background-color: hsl(213, 20%, 22%);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.main-container h1 {
+    color: white;
+    margin: 2rem 0 1rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.main-container p{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+}
+
+.main-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.main-container ul li button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(213, 20%, 22%);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-container ul li button:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.main-container ul li button:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.btn-submit {
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    padding: 0.6rem 0 ;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+/* Styling Thank you card now */
+
+.thank-you {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.thank-you img{
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.thank-you p.gray {
+    background-color: hsl(213, 20%, 22%);
+    border-radius: 30px;
+    color: hsl(25, 97%, 53%);
+    padding: 0.2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.thank-you h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.thank-you p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+}
+
+/* Adding Interactivity now */
+
+.hidden {
+    display: none;
+}
