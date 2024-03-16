@@ -1,0 +1,134 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins";
+}
+
+main {
+  width: 75rem;
+  display: flex;
+  flex-direction: row;
+  /* background-color: white; */
+}
+
+/* Styling for left side of page */
+.heading {
+  width: 50%;
+  transform: translateY(25%);
+}
+
+.heading h2 {
+  color: white;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.heading p {
+  color: white;
+  padding-right: 3rem;
+  line-height: 1.75rem;
+}
+.inputs {
+  width: 50%;
+}
+
+.free-trial {
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 7px rgba(0, 0, 0, 0.15);
+}
+
+/*  Styling for the Form   */
+.form-div {
+  /* align-items: center; */
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.warning p {
+  text-align: right;
+  color: var(--red);
+  font-size: 0.75rem;
+  padding-right: 1rem;
+  font-weight: 400;
+}
+
+.input-div .inp {
+  position: relative;
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.input-div .inp input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.input-div .inp input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+  /* color: red; */
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 15px;
+}
+
+.inp img {
+  /* position: relative; */
+  transform: translateY(-150%);
+  float: right;
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.submit-button button {
+  padding: 1rem;
+  width: 100%;
+  font-family: "Poppins";
+  /* font-weight: bold; */
+  font-size: 15px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+}
