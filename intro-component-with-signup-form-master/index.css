@@ -18,6 +18,8 @@
 }
 
 body {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-size: cover;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -30,10 +32,9 @@ main {
   width: 75rem;
   display: flex;
   flex-direction: row;
-  /* background-color: white; */
 }
 
-/* Styling for left side of page */
+/*!* Styling for left side of page *!*/
 .heading {
   width: 50%;
   transform: translateY(25%);
@@ -68,7 +69,6 @@ main {
 
 /*  Styling for the Form   */
 .form-div {
-  /* align-items: center; */
   background-color: white;
   padding: 1rem;
   border-radius: 8px;
@@ -98,14 +98,12 @@ main {
 
 .input-div .inp input::placeholder {
   color: rgba(0, 0, 0, 0.25);
-  /* color: red; */
   font-weight: bold;
   font-family: "Poppins";
   font-size: 15px;
 }
 
 .inp img {
-  /* position: relative; */
   transform: translateY(-150%);
   float: right;
   margin-right: 20px;
@@ -124,11 +122,52 @@ main {
   padding: 1rem;
   width: 100%;
   font-family: "Poppins";
-  /* font-weight: bold; */
   font-size: 15px;
   background-color: var(--green);
   border: none;
   border-radius: 6px;
   color: white;
   font-weight: 500;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button button:hover {
+  background-color: #77e2b4;
+}
+
+@media all and (max-width: 376px) {
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+    background-size: cover;
+    padding: 1rem;
+  }
+  body main {
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .heading {
+    width: 100%;
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+  }
+
+  .heading h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .heading p {
+    padding: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .inputs {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .free-trial {
+    margin-top: 1rem;
+  }
 }
