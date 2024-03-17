@@ -18,7 +18,6 @@
 }
 
 body {
-  background-image: url("./images/bg-intro-desktop.png");
   background-size: cover;
   display: flex;
   height: 100vh;
