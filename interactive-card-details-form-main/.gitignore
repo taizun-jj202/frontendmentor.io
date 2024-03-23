@@ -14,3 +14,11 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# Avoid node_modules from VCS
+node_modules
+package.json
+package-lock.json
+
+# Avoid formatter files 
+.prettierrc
