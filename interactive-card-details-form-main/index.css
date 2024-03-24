@@ -36,9 +36,9 @@ body {
 	flex-direction: column;
 }
 
-div {
+/* div {
 	border: 1px solid red;
-}
+} */
 
 .cards {
 	position: relative;
@@ -47,7 +47,7 @@ div {
 	justify-self: center;
 	align-items: center;
 	width: 100vw;
-	height: 45vh;
+	height: 275px;
 }
 
 .back-card {
@@ -133,4 +133,98 @@ div {
 	z-index: 1;
 	font-size: 15px;
 	letter-spacing: 2px;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	padding: 1rem;
+	display: block;
+	width: 320px;
+}
+
+/* Cardholder name input section */
+.card-name {
+	font-size: 11px;
+	font-weight: 700;
+	color: var(--dark-violet);
+	letter-spacing: 1.5px;
+}
+
+input {
+	width: 100%;
+	margin: 0.2rem 0;
+	padding: 0.5rem;
+	border-radius: 6px;
+	border-color: rgba(0, 0, 0, 0.15);
+	border-width: 1px;
+}
+input::placeholder {
+	font-family: 'Space Grotesk';
+	font-weight: 500;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.25);
+}
+.cn {
+	padding-bottom: 1rem;
+}
+
+/* Card number section */
+.crd-number {
+	padding-top: 1rem;
+	font-size: 11px;
+	font-weight: 700;
+	color: var(--dark-violet);
+	letter-spacing: 1.5px;
+}
+.cnn {
+	padding-bottom: 1rem;
+}
+
+.lablees {
+	width: 100%;
+}
+
+label {
+	font-size: 11px;
+	font-weight: 700;
+}
+.expdate {
+	width: 50%;
+	text-align: left;
+	letter-spacing: 1.5px;
+}
+.l-cvc {
+	width: 50%;
+	text-align: center;
+	padding-left: 1.5rem;
+}
+.mm {
+	width: 20%;
+	margin-right: 5px;
+}
+.yy {
+	width: 20%;
+}
+
+.cvc {
+	width: 50%;
+	margin-left: 0.5rem;
+}
+
+.submit-btn {
+	width: 100%;
+	padding: 1rem;
+	margin-top: 1rem;
+	color: white;
+	background-color: var(--dark-violet);
+	font-family: 'Space Grotesk';
+	font-weight: 500;
+	border-radius: 8px;
+	font-size: 15px;
 }
