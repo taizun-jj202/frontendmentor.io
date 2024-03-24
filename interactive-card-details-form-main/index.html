@@ -1,100 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link rel="stylesheet" href="./index.css">
-    <title>Card Challenge | TaizuN Jafri</title>
-  </head>
-  <body>
-    <div class="cards">
-      <div class="front-card">
-        <img src="./images/bg-card-front.png" alt="Front Card" />
-      </div>
-      <div class="back-card">
-        <img src="./images/bg-card-back.png" alt="Back Card" />
-      </div>
-    </div>
+		<link rel="stylesheet" href="./index.css" />
+		<title>Card Challenge | TaizuN Jafri</title>
+	</head>
+	<body>
+		<div class="cards">
+			<div class="front-card">
+				<div class="front-img">
+					<img
+						src="./images/bg-card-front.png"
+						alt="Front of Credit Card"
+						class="front-card"
+					/>
+					<div class="c-logo">
+						<img src="./images/card-logo.svg" alt="Logo of Card Company" />
+					</div>
+					<div class="c-number">0000 0000 0000 0000</div>
+					<div class="c-name">JANE APPLESEED</div>
+					<div class="c-cvc">00 / 00</div>
+				</div>
+			</div>
 
-    <div class="form-container">
-      <!-- Card Name -->
-      <input
-        type="text"
-        name="cardholder-name"
-        id="cardhoder-name"
-        class="card-holder-name"
-        placeholder="e.g Jane Appleseed"
-        required
-      />
-      <label for="card-holder-name">CARDHOLDER NAME</label>
+			<div class="back-card">
+				<div class="back-img">
+					<img
+						src="./images/bg-card-back.png"
+						alt="Back of Credit Card"
+						class="back-card"
+					/>
+					<div class="cvc-text">000</div>
+				</div>
+			</div>
+		</div>
 
-      <!-- Card number -->
-      <input
-        type="number"
-        name="card-number"
-        id="card-number"
-        class="card-number"
-        placeholder="e.g 1234 5678 9123 0000"
-        required
-      />
-      <label for="card-number"> CARD NUMBER </label>
+		<div class="form">
+			<label for="cardholder-name">CARDHOLDER NAME</label>
+			<input
+				type="text"
+				name="cardholder-name"
+				id="cardholder-name"
+				class="cardholder-name"
+				placeholder="e.g Jane Appleseed"
+				required
+			/>
 
-      <!-- EXP Date -->
-      <div class="date-cvc">
-        <input
-          type="number"
-          name="expdate"
-          id="expdate-mm"
-          class="expdate mm"
-          required
-          placeholder="MM"
-        />
-        <input
-          type="number"
-          name="expdate"
-          id="expdate-yy"
-          class="expdate yy"
-          placeholder="YY"
-          required
-        />
-        <label for="expdate">Exp. Date (MM/YY)</label>
+			<label for="card-number">CARD NUMBER</label>
+			<input
+				type="number"
+				name="card-number"
+				id="card-number"
+				class="card-number"
+				placeholder="e.g 1234 5678 9123 0000"
+				required
+			/>
 
-        <input
-          type="number"
-          name="cvc"
-          id="cvc"
-          class="cvc"
-          placeholder="e.g 123"
-        />
-        <label for="cvc">CVC</label>
-      </div>
-      <button type="submit" class="submit-btn">Confirm</button>
-    </div>
+			<div class="expdate">
+				<label for="expdate">EXP. DATE (MM/YY)</label>
+				<input
+					type="number"
+					name="expdate"
+					id="expdate mm"
+					class="mm"
+					placeholder="MM"
+					required
+				/>
+				<input
+					type="number"
+					name="expdate"
+					id="expdate yy"
+					class="yy"
+					placeholder="YY"
+					required
+				/>
 
-    <!-- Thank you screen -->
-    <div class="thank-you">
-      <img src="images/icon-complete.svg" alt="" />
-      <div class="txt-btns">
-        <h2>THANK YOU</h2>
-        <p>We've added your card details</p>
-        <button type="button">Continue</button>
-      </div>
-    </div>
+				<label for="cvc">CVC</label>
+				<input
+					type="number"
+					name="cvv"
+					id="cvc"
+					class="cvc"
+					placeholder="e.g 123"
+					required
+				/>
+			</div>
 
-    <!-- <script src="./"></script> -->
-  </body>
+			<button type="submit" class="submit-btn">Continue</button>
+		</div>
+	</body>
 </html>
