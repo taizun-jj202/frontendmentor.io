@@ -56,6 +56,7 @@ div {
 	height: 140px;
 	width: 250px;
 	z-index: -1;
+	border-radius: 6px;
 }
 
 .back-img img {
@@ -75,4 +76,61 @@ div {
 	top: 62px;
 	color: white;
 	font-size: 10px;
+}
+
+.front-card {
+	position: absolute;
+	top: 7.5rem;
+	height: 140px;
+	width: 250px;
+	color: white;
+	z-index: 1;
+	transform: translateX(-2%);
+	border-radius: 8px;
+}
+
+/* Card background */
+.front-card .front-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+/* Card logo */
+.front-img .c-logo img {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	width: auto;
+	height: 30px;
+	object-fit: cover;
+}
+
+.front-img .c-name {
+	position: absolute;
+	font-size: 9px;
+	bottom: 1rem;
+	left: 1rem;
+	z-index: 1;
+}
+
+.front-img .c-cvc {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 1;
+	font-size: 8px;
+}
+
+.front-img .c-number {
+	position: absolute;
+	bottom: 2.5rem;
+	left: 1rem;
+	z-index: 1;
+	font-size: 15px;
+	letter-spacing: 2px;
 }
