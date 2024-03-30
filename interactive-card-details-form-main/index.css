@@ -26,19 +26,14 @@
 body {
 	background-image: url('./images/bg-main-mobile.png');
 	background-repeat: no-repeat;
-	background-position: top;
 	background-color: white;
-	background-size: contain;
+	background-size: 100% 240px;
 	width: 100vw;
 	height: 100vh;
 	font-family: 'Space Grotesk';
 	display: flex;
 	flex-direction: column;
 }
-
-/* div {
-	border: 1px solid red;
-} */
 
 .cards {
 	position: relative;
@@ -170,6 +165,15 @@ input::placeholder {
 	font-size: 15px;
 	color: rgba(0, 0, 0, 0.25);
 }
+input:valid {
+	font-family: 'Space Grotesk';
+	font-weight: 500;
+}
+input:focus {
+	font-family: 'Space Grotesk';
+	color: var(--dark-violet);
+	font-weight: 700;
+}
 .cn {
 	padding-bottom: 1rem;
 }
@@ -227,4 +231,209 @@ label {
 	font-weight: 500;
 	border-radius: 8px;
 	font-size: 15px;
+}
+
+.thankyou {
+	padding-top: 1rem;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.thankyou img {
+	padding-bottom: 1.5rem;
+	width: 80px;
+}
+.thankyou h2 {
+	letter-spacing: 2px;
+}
+
+.thankyou p {
+	padding-top: 1rem;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+.contt {
+	width: 100%;
+	padding: 1rem;
+	margin-top: 4rem;
+	color: white;
+	background-color: var(--dark-violet);
+	font-family: 'Space Grotesk';
+	font-weight: 500;
+	border-radius: 8px;
+	font-size: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (width >= 1550px) {
+	body {
+		width: 100vw;
+		height: 100vh;
+		background-image: url('./images/bg-main-desktop.png');
+		background-repeat: no-repeat;
+		background-color: white;
+		background-size: 500px 100%;
+		font-family: 'Space Grotesk';
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cards {
+		position: relative;
+		width: 40vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+	}
+
+	.front-card {
+		position: absolute;
+		top: 142px;
+		left: 10rem;
+		width: 450px;
+		height: 250px;
+		transform: translateX(0);
+	}
+
+	/* Card Logo  */
+	.front-img .c-logo img {
+		height: 50px;
+		top: 30px;
+		left: 30px;
+	}
+
+	.front-img .c-name {
+		bottom: 30px;
+		left: 30px;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+	}
+
+	.front-img .c-cvc {
+		bottom: 30px;
+		right: 30px;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+	}
+
+	.front-img .c-number {
+		top: 135px;
+		left: 30px;
+		width: 390px;
+		height: 30px;
+		font-size: 25px;
+	}
+
+	.back-card {
+		position: absolute;
+		width: 450px;
+		height: 250px;
+		top: 426px;
+		left: 15rem;
+		box-shadow: 14px 10px 18px 0 rgba(0, 0, 0, 0.08);
+	}
+
+	.back-img img {
+		transform: translateX(0);
+	}
+
+	.back-img .cvc-text {
+		right: 3.5rem;
+		top: 7rem;
+		font-size: 15px;
+		letter-spacing: 3px;
+	}
+
+	/*/////////////////////////////////////////////////////////////////  */
+
+	.form-container {
+		position: relative;
+		width: 60vw;
+		align-items: flex-start;
+		padding-left: 5rem;
+	}
+
+	.form {
+		position: absolute;
+		top: 200px;
+		width: 450px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card-name {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	input {
+		padding: 0.8rem;
+	}
+	input:focus {
+		font-size: 18px;
+	}
+
+	.crd-number {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	label {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.lablees {
+		width: 100%;
+	}
+
+	.l-cvc {
+		padding-left: 2.75rem;
+	}
+
+	.cvc {
+		width: 52%;
+	}
+
+	.cnn,
+	.cn,
+	.exp-label {
+		padding-bottom: 30px;
+	}
+
+	.thankyou {
+		padding-top: 1rem;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.thankyou img {
+		padding-bottom: 1.5rem;
+		width: 80px;
+	}
+	.thankyou h2 {
+		letter-spacing: 2px;
+	}
+
+	.thankyou p {
+		padding-top: 1rem;
+		font-weight: 500;
+		color: rgba(0, 0, 0, 0.55);
+	}
+
+	.contt {
+		width: 100%;
+		padding: 1rem;
+		margin-top: 4rem;
+		color: white;
+		background-color: var(--dark-violet);
+		font-family: 'Space Grotesk';
+		font-weight: 500;
+		border-radius: 8px;
+		font-size: 15px;
+	}
 }
