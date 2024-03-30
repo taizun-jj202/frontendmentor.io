@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -52,59 +52,68 @@
 
 		<div class="form-container">
 			<form class="form">
-				<div class="cn">
-					<label for="cardholder-name" class="card-name" id="c-name"
-						>CARDHOLDER NAME</label
-					>
-					<input
-						type="text"
-						name="cardholder-name"
-						id="cardholder-name"
-						class="cardholder-name"
-						placeholder="e.g Jane Appleseed"
-						required
-					/>
-				</div>
-				<div class="cnn">
-					<label for="card-number" class="crd-number">CARD NUMBER</label>
-					<input
-						type="number"
-						name="card-number"
-						id="card-number"
-						class="card-number"
-						placeholder="e.g 1234 5678 9123 0000"
-						required
-					/>
-				</div>
-				<div class="exp-label">
-					<div class="lablees">
-						<label for="expdate" class="expdate">EXP. DATE (MM/YY)</label>
-						<label for="cvc" class="l-cvc">CVC</label>
+				<div class="wrapper">
+					<div class="cn">
+						<label for="cardholder-name" class="card-name" id="c-name"
+							>CARDHOLDER NAME</label
+						>
+						<input
+							type="text"
+							name="cardholder-name"
+							id="cardholder-name"
+							class="cardholder-name"
+							placeholder="e.g Jane Appleseed"
+							required
+						/>
 					</div>
-					<input
-						type="number"
-						name="expdate"
-						id="expdate mm"
-						class="mm"
-						placeholder="MM"
-						required
-					/>
-					<input
-						type="number"
-						name="expdate"
-						id="expdate yy"
-						class="yy"
-						placeholder="YY"
-						required
-					/>
-					<input
-						type="number"
-						name="cvv"
-						id="cvc"
-						class="cvc"
-						placeholder="e.g 123"
-						required
-					/>
+					<div class="cnn">
+						<label for="card-number" class="crd-number">CARD NUMBER</label>
+						<input
+							type="number"
+							name="card-number"
+							id="card-number"
+							class="card-number"
+							placeholder="e.g 1234 5678 9123 0000"
+							required
+						/>
+					</div>
+					<div class="exp-label">
+						<div class="lablees">
+							<label for="expdate" class="expdate">EXP. DATE (MM/YY)</label>
+							<label for="cvc" class="l-cvc">CVC</label>
+						</div>
+						<input
+							type="number"
+							name="expdate"
+							id="expdate mm"
+							class="mm"
+							placeholder="MM"
+							required
+						/>
+						<input
+							type="number"
+							name="expdate"
+							id="expdate yy"
+							class="yy"
+							placeholder="YY"
+							required
+						/>
+						<input
+							type="number"
+							name="cvv"
+							id="cvc"
+							class="cvc"
+							placeholder="e.g 123"
+							required
+						/>
+					</div>
+				</div>
+
+				<div class="thankyou hidden">
+					<img src="./images/icon-complete.svg" alt="Stylish Tick mark icon" />
+					<h2>THANK YOU !</h2>
+					<p>We've added your card details</p>
+					<button class="contt">Continue</button>
 				</div>
 				<button type="submit" class="submit-btn">Confirm</button>
 			</form>
