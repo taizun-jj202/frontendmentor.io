@@ -74,6 +74,7 @@
 							id="card-number"
 							class="card-number"
 							placeholder="e.g 1234 5678 9123 0000"
+							maxlength="16"
 							required
 						/>
 					</div>
@@ -89,6 +90,7 @@
 							class="mm"
 							placeholder="MM"
 							required
+							onblur="check_month()"
 						/>
 						<input
 							type="number"
@@ -97,6 +99,7 @@
 							class="yy"
 							placeholder="YY"
 							required
+							onblur="check_year()"
 						/>
 						<input
 							type="number"
@@ -108,15 +111,16 @@
 						/>
 					</div>
 				</div>
-
 				<div class="thankyou hidden">
 					<img src="./images/icon-complete.svg" alt="Stylish Tick mark icon" />
 					<h2>THANK YOU !</h2>
 					<p>We've added your card details</p>
-					<button class="contt">Continue</button>
+					<button type="reset" class="contt">Continue</button>
 				</div>
+
 				<button type="submit" class="submit-btn">Confirm</button>
 			</form>
 		</div>
+		<script src="./index.js"></script>
 	</body>
 </html>

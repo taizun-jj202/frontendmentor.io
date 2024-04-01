@@ -35,6 +35,10 @@ body {
 	flex-direction: column;
 }
 
+.red_border {
+	border: 2px solid red;
+}
+
 .cards {
 	position: relative;
 	display: flex;
