@@ -22,3 +22,6 @@ package-lock.json
 
 # Avoid formatter files 
 .prettierrc
+
+# Avoid .idea folder
+./idea
