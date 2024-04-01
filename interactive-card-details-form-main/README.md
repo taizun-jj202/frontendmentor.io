@@ -6,15 +6,10 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#screenshots)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -31,7 +26,7 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 ![DESKTOP VIEW](./screenshots/desktop.png)
 ![MOBILE VIEW](./screenshots/desktop_correct_input.png)
@@ -47,9 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/taizun-jj202/frontendmentor.io/tree/main/interactive-card-details-form-main)
-- Live Site URL: [GitHub Pages](https://taizun-jj202.github.io/frontendmentor.io/tree/main/interactive-card-details-form-main)
-
-## My process
+- Live Site URL: [GitHub Pages](https://taizun-jj202.github.io/frontendmentor.io/interactive-card-details-form-main/)
 
 ### Built with
 
