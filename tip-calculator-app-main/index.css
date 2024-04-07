@@ -1,6 +1,265 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --strong-cyan: hsl(172, 67%, 45%);
 }
 
+body {
+  font-family: "Space Mono";
+  background-color: var(--light-grayish-cyan);
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 2rem;
+  background-color: white;
+  height: 100vh;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.headingg {
+  width: 100vw;
+  padding: 2rem;
+}
+.headingg img {
+  margin: auto;
+  display: block;
+}
+
+.bill-ctr {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark-grayish-cyan);
+}
+
+.icons {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+input {
+  padding: 0.75rem;
+  margin-top: 0.35rem;
+  border-radius: 5px;
+  background-color: var(--very-light-grayish-cyan);
+  border: none;
+  width: 100%;
+  text-align: right;
+}
+
+input::placeholder {
+  font-family: "Space Mono";
+  text-align: right;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsla(186, 14%, 43%, 0.454);
+}
+
+input:focus {
+  border: 2px solid var(--strong-cyan);
+  outline: none;
+  font-family: "Space Mono";
+  font-size: 15px;
+}
+input:valid {
+  font-family: "Space Mono";
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+  font-size: 18px;
+  text-align: right;
+}
+
+/* Second part 'Select Tip element starts now */
+
+.select-tip {
+  width: 100%;
+}
+.select-tip p,
+.num-people p {
+  padding: 2rem 0 0.5rem 0;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark-grayish-cyan);
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: 47% 48%;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+}
+
+.select-tip button {
+  font-family: "Space Mono";
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.btn-grid input::placeholder {
+  text-align: center;
+}
+
+.select-tip button:hover {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+/* Third part 'Number of People' section below */
+
+.num-people {
+  padding-top: 2rem;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.num-people p {
+  display: inline;
+  /* width: 50%; */
+}
+.num-people p.red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: right;
+  color: red;
+  border: 0;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+/* Fourth section : 'Dark green display section' */
+
+.display {
+  margin-top: 2rem;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: var(--very-dark-cyan);
+  display: inline-block;
+  width: 100%;
+}
+
+.tip-amt,
+.total {
+  display: grid;
+  grid-template-columns: auto auto;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.tip-amt p {
+  color: var(--grayish-cyan);
+}
+
+.tipp {
+  font-size: 25px;
+  text-align: right;
+  color: var(--strong-cyan);
+}
+
+.rst-btn button {
+  background-color: var(--strong-cyan);
+  border: none;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.75rem 0;
+  border-radius: 8px;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: var(--light-grayish-cyan);
+  border: none;
+}
+
+/* Startign desktop design from here */
+
+@media (width >= 750px) {
+  .headingg {
+    margin: 3rem auto 2rem auto;
+  }
+
+  .container {
+    max-width: 850px;
+    max-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+    width: 50%;
+  }
+
+  /* Styling Right section first */
+  .display {
+    width: 50%;
+    height: 100%;
+    margin-left: 2rem;
+    margin-top: 0;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .tip-amt {
+    padding-top: 2.5rem;
+  }
+  .total {
+    padding-top: 2.5rem;
+  }
+  .rst-btn button {
+    position: absolute;
+    width: 83%;
+    bottom: 2rem;
+  }
+
+  /* Styling button grid  */
+  .btn-grid {
+    grid-template-columns: auto auto 33%;
+  }
+
+  p,
+  .select-tip p,
+  .num-people p {
+    font-size: 15px;
+  }
+
+  .tipp {
+    font-size: 35px;
+  }
+
+  .icons {
+    bottom: 18px;
+    left: 15px;
+  }
+}
